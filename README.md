@@ -1,8 +1,9 @@
 # DiegoApp
 
 # Para llmar esta dependencia en tu proyecto de phoenix liveview
-# DEclarar dentro de mix.exs -> modulo "deps" 
-# {:diegoApp, github: "gogohhh/diegoApp"}
+ Declarar dentro de mix.exs -> modulo "deps"
+
+        {:diegoApp, github: "gogohhh/diegoApp"}
 
 To start your Phoenix server:
 
