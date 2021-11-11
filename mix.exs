@@ -4,13 +4,17 @@ defmodule DiegoApp.MixProject do
   def project do
     [
       app: :diegoApp,
-      version: "0.1.0",
+      name: "diegoApp",
+      description: "Prueba de libreria de phoenix elixir",
+      version: "1.1.1",
       elixir: "~> 1.7",
       elixirc_paths: elixirc_paths(Mix.env()),
       compilers: [:phoenix, :gettext] ++ Mix.compilers(),
       start_permanent: Mix.env() == :prod,
+      homepage_url: "https://github.com/gogohhh/diegoApp",
       aliases: aliases(),
-      deps: deps()
+      deps: deps(),
+      package: package()
     ]
   end
 
@@ -56,6 +60,14 @@ defmodule DiegoApp.MixProject do
   defp aliases do
     [
       setup: ["deps.get", "cmd npm install --prefix assets"]
+    ]
+  end
+
+  defp package do
+    [
+      licenses: ["MIT"],
+      links: %{github: "https://github.com/gogohhh/diegoApp"},
+      files: ~w(assets confid lib priv test CHANGELOG.md LICENSE.md mix.exs README.md)
     ]
   end
 end
