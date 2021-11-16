@@ -1,5 +1,8 @@
 defmodule DiegoAppWeb.PageLive do
+  @moduledoc false
   use DiegoAppWeb, :live_view
+
+  alias Phoenix.LiveView.Socket
 
   @impl true
   def mount(_params, _session, socket) do
